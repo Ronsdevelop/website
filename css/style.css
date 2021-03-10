@@ -28,8 +28,8 @@
 /* colors  */
 
 :root {
-    --primary:#EEBF00;
-    --secondary:#232B38;
+    --primary:   #f8b22e;
+    --secondary:#57100b;
     --ternary:#6C6C6C;
     --danger:#FE4545;
     --pure:#FEFEFE;
@@ -77,6 +77,57 @@ body{
       max-width: 1152px;
     }
   }
+
+  .main{
+      width: 1170px;
+      margin: auto;
+  }
+  .main ul{
+      margin: auto;
+      padding: 20px 0 0;
+      list-style: none;
+      text-align: right;
+  }
+  .main ul li{
+      float: none;
+      display: inline-block;
+  }
+  .main ul li:nth-child(1){float: left; }
+  .main ul li:nth-child(2){float: left; }
+  .main ul li:nth-child(3){float: left; }
+  .main ul li a{
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: block;
+      font-family: lucida console;
+      padding: 5px 20px;
+  }
+  .main ul li a:hover{
+      transition:  1s;
+      background-color:#f8b22e;
+      border-radius: 10px;
+      color: #57100b;
+  }
+  #navbar{
+      width: 100%;
+      position: absolute;
+  }
+  .logo{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      left: 50%;
+      top: 0%;
+      transform: translate(0,0);
+      content: '';
+      transition: 1s;
+      margin-left: -50px;
+      margin-top: 25px;
+      
+  }
+   
 
   .main-wrapper{
       position:relative;
