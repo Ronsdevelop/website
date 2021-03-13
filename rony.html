@@ -7,76 +7,88 @@
     <title>Panadería Leos</title>
     
     <link rel="stylesheet" href="css/style_v1.0.css">
+      <!--========== BOX ICONS ==========-->
+      <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="contenedor-principal">
-        <div class="banner-mobile">
-            <div class="mobile-logo">
-                <img src="images/logo.png" width="110px" height="70px" alt="">
+    
+
+
+    <!--     HEADER -->
+    <!-- <header class="header-menu">
+        <div class="header-menu-contentido">
+            <div id="logo">
+                <div class="logo-principal"><a href="#"><img id="logo-1" alt="logo"
+                            src="images/logo.png"></a></div>
+                <div class="logo-secundario"><a href="#"><img id="logo-2" alt="logo"
+                            src="images/logo_sm.png"></a></div>              
             </div>
-            <div class="mobile-nav">
-                <div class="cart">
-                    <div class="flex items-center">
-                        <img src="./icons/cart-dark.svg" alt="">
-                        <a href="#">0 Items - ($0.00)</a>
-                    </div>
+
+            <nav id="nav-tops" class="barra-menu" style="display: block;">
+                <ul style="margin-left: 34px;">
+                    <li class="menu-item current-menu-item page_item page-item-19 current_page_item ">
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">Nosotros</a>                        
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#">Productos</a>
+                    </li>                  
+                    <li class="vu_middle-menu-item menu-item ">
+                        <a href="#">Gallería</a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li class="menu-item 5">
+                        <a href="#">Delivery</a>
+                    </li>
+                </ul>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
-                <div class="nav-top">
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">Products</a>
-                        </li>
-                        <li>
-                            <a href="#">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#">Shop</a>
-                        </li>
-                        <li>
-                            <a href="#">Services</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact us</a>
-                        </li>
-                        <li>
-                            <a href="#">Log in</a>
-                        </li>
-                        <li>
-                            <a href="#">Register</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact flex items-center">
-                    <img src="./icons/phone.svg" alt="">
-                    <div>
-                        <h5>Call us: (+84) 123 456 789</h5>
-                        <h6>E-mail : support@freshmeal.com</h6>
-                    </div>
-                </div>
-                <div class="time flex items-center">
-                    <img src="./icons/clock.svg" alt="">
-                    <div>
-                        <h5>Working Hours:</h5>
-                        <h6>Mon - Sat (8.00am - 12.00am)</h6>
-                    </div>
-                </div>
-            </div>
+            </nav>
         </div>
-        <div class="contenedor-page"> 
-            <div class="nav-trigger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-bar-chart">
-                    <line x1="12" y1="20" x2="12" y2="10" />
-                    <line x1="18" y1="20" x2="18" y2="4" />
-                    <line x1="6" y1="20" x2="6" y2="16" /></svg>
+    </header> -->
+
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="navegacion bd-container">    
+            <a href="#" class="nav__logo"><img src="images/logo.png" width="120px" height="60px" alt=""></a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-opciones">
+                    <li class="nav-items"><a href="#inicio" class="nav-enlaces activo">Inicio</a></li>
+                    <li class="nav-items"><a href="#nosotros" class="nav-enlaces">Nosotros</a></li>
+                    <li class="nav-items"><a href="#productos" class="nav-enlaces">Productos</a></li>
+                    <li class="nav-items"><a href="#galeria" class="nav-enlaces">Galería</a></li>
+                    <li class="nav-items"><a href="#contacto" class="nav-enlaces">Contacto</a></li>                   
+                    <li class="nav-items"><a href="#delivey" class="nav-enlaces">Delivery</a></li>                   
+                    <li class="nav-items"><a href="#delivey" class="nav-enlaces">Login</a></li>                   
+                </ul>
             </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    
+
+    
+
+
+
+
+
+
+  <!--   <div class="contenedor-principal">
+  
+        <div class="contenedor-page"> 
+           
             <div class="contenido-page">
                 <header class="barra-principal">
                     <div class="content flex justify-between items-center">
@@ -146,148 +158,14 @@
                     </div>
                 </header>
 
-                
-                <header class="hero flex items-center">
-                    <div class="content">
-                        <div class="welcome flex items-center">
-                            <span>Bienvenidos a Panadería</span>
-                            <img src="images/logo_sm.png" width="120px" height="40px" alt="">
-                        </div>
-                        <h1>The World Best <span>Shoping</span> Website</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the
-                            industry's standard dummy.</p>
-                        <div>
-                            <button class="btn btn-primary">Read More</button>
-                            <button class="btn btn-secondary">Shop Now</button>
-                        </div>
-                        <div class="hero-image">
-                            <img src="./images/straw.png" alt="">
-                        </div>
-                    </div>
-                </header>
-
-                <section class="top-products">
-                    <div class="content">
-                        <h1 class="section-heading">Top products</h1>
-                        <div class="slider">
-                            <button class="slider-btn prev-btn"><img src="./icons/pre.svg" alt=""></button>
-                            <button class="slider-btn next-btn"><img src="./icons/next.svg" alt=""></button>
-                            <div class="food-slider">
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-1.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Summer Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div>
-                                        <div class="price text-center">
-                                            $ 1.25
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-2.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Russian Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div>
-                                        <div class="price text-center">
-                                            $ 1.25
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-3.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Greek Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div>
-                                        <div class="price text-center">
-                                            $ 1.25
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="food-card magic-shadow-sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-3.png" alt="">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Cottage pie</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/start-filled.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                            <img src="./icons/star-grey.svg" alt="">
-                                        </div>
-                                        <div class="price text-center">
-                                            $ 1.25
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center btn-wrapper">
-                            <button class="btn btn-secondary">View More</button>
-                        </div>
-                    </div>
-                </section>
+               
 
             </div>
 
         </div>
 
     </div>
-
+ -->
     
 </body>
 </html>
