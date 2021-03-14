@@ -2,7 +2,7 @@
 
  /*===== VARIABLES CSS =====*/
  :root {
-     --header-height: 6rem;
+     --header-height: 6.4rem;
 
      /*========== Colores ==========*/
      --primary: #f8b22e;
@@ -129,6 +129,7 @@
 
 /* HEADER MENU
 ================================================== */
+
  
  .center-logo {
      position: absolute;
@@ -344,28 +345,57 @@
         width: 100%;
        
     }
+  /* =======  CABECERA  ====== */
+    .cabecera{
+        font-size: 13px;
+        line-height: 1;
+        color: #fff;
+        padding: 8px 0;
+        background-color: #343434;
+    }
+    .container{
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .row{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .info-cabecera{
+        line-height: 20px;
+      
+        text-align: center;
+    }
+
+    .cabecera .info-cabecera > span{
+        margin: 10px;
+        font-weight: normal;
+    }
+
     .area_logo{
         width: 300px;
         height: 300px;
         position: absolute;
-        left: 50%;
-        top: 0;
+        left: 50%;       
         content: "";
         margin-left: -70px;
     }
      
     .nav-menu{
       position: fixed;
-      top: -350px;
-      left: 0;
-      width: 100%;
-      padding: 1.5rem 0 1rem;
-      text-align: center;
-      background-color: var(--body-color);
+      top: 8.52rem;
+      right: -100%;
+      width: 80%;
+      height: 100%;
+      padding:  2rem;
+     
+      background-color: var(--secondary);
       transition: .4s;
-      box-shadow: 0 4px 4px rgba(0,0,0,.1);
-      border-radius: 0 0 1rem 1rem;
-      z-index: var(--z-fixed);
+     
+     
+    
     }
     .navegacion-toggle{
         display: block!important;
@@ -385,11 +415,12 @@
   }
 
   .nav-items{
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-4);
   }
   
   .nav-enlaces, .nav__logo, .navegacion-toggle{
-    color: var(--text-color);
+    
+    color: #fff;
     font-weight: var(--font-medium);
   }
   
@@ -398,28 +429,46 @@
   }
   
   .nav-enlaces{
-    transition: .3s;
+      position: relative;
+     transition: .3s;
   }
   
   .nav-enlaces:hover{
-    color: var(--first-color);
+      position: relative;   
+  }
+  .nav-enlaces:hover::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 0.18rem;
+      left: 0;
+      top: 2rem;
+      background-color: var(--primary);
   }
   
   .navegacion-toggle{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     cursor: pointer;
+    color: var(--text-color);
+
   }
 
   /*==== MOSTRAR EL MENU PRINCIPAL ======*/
 
   .mostrar-menu{
-      top: var(--header-height);
+     right:0;
 
   }
 
   /*==== SECCION ACTIVA======*/
-  .activo{
-      color: var(--primary);
+  .activo::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--primary); 
   }
 
   

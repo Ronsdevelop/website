@@ -18,9 +18,12 @@ mostrarMenu('nav-toggle','nav-menu');
 const navLink = document.querySelectorAll('.nav-enlaces')
 
 function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
+    navLink.forEach(n=>n.classList.remove('activo'));
+    this.classList.add('activo');
+  /*   remover el menu en responsive */
+    const navMenu = document.getElementById('nav-menu');
     navMenu.classList.remove('mostrar-menu')
+    
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
