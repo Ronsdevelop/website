@@ -2,7 +2,7 @@
 
  /*===== VARIABLES CSS =====*/
  :root {
-     --header-height: 3rem;
+     --header-height: 6rem;
 
      /*========== Colores ==========*/
      --primary: #f8b22e;
@@ -356,7 +356,7 @@
      
     .nav-menu{
       position: fixed;
-      top: 6rem;
+      top: -350px;
       left: 0;
       width: 100%;
       padding: 1.5rem 0 1rem;
@@ -371,7 +371,7 @@
         display: block!important;
         position: absolute;
         right: 5%;
-        top: 110% !important;
+        top: 70% !important;
         margin-top: -24px;
         width: 48px;
         height: 48px;
@@ -384,7 +384,7 @@
      
   }
 
-  .nav__items{
+  .nav-items{
     margin-bottom: var(--mb-2);
   }
   
@@ -408,4 +408,53 @@
   .navegacion-toggle{
     font-size: 1.3rem;
     cursor: pointer;
+  }
+
+  /*==== MOSTRAR EL MENU PRINCIPAL ======*/
+
+  .mostrar-menu{
+      top: var(--header-height);
+
+  }
+
+  /*==== SECCION ACTIVA======*/
+  .activo{
+      color: var(--primary);
+  }
+
+  
+/* Change background header */
+.scroll-header{
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  }
+  
+  /* Scroll top */
+  .scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background: rgba(6,156,84,.5);
+    border-radius: .4rem;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    visibility: hidden;
+  }
+  
+  .scrolltop:hover{
+    background-color: var(--first-color-alt);
+  }
+  
+  .scrolltop__icon{
+    font-size: 1.8rem;
+    color: var(--body-color);
+  }
+  
+  /* Show scrolltop */
+  .show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
   }
